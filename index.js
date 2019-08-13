@@ -11,7 +11,7 @@ var app = express();
 // var app = require('connect')();
 var swaggerTools = require('swagger-tools');
 var jsyaml = require('js-yaml');
-var serverPort = 4000;
+var serverPort = normalizePort(process.env.PORT || '3000');
 
 // swaggerRouter configuration
 var options = {
